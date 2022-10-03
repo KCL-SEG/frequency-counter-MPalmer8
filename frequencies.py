@@ -9,6 +9,10 @@ def frequencies(items):
         if item in frequencies.keys():
             frequencies[item] += 1
         else:
-            frequencies[item] = 0
+            frequencies[item] = 1
 
     return frequencies
+
+input = ['0', 4,4,'4','d','d','e',0,'a','d','4']
+output = frequencies(input)
+print(output)
